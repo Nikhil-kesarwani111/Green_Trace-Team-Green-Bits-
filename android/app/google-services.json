@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "17088251352",
+    "firebase_url": "https://green-trace-c76ad-default-rtdb.firebaseio.com",
+    "project_id": "green-trace-c76ad",
+    "storage_bucket": "green-trace-c76ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17088251352:android:1e0555b31cb5078d21dead",
+        "android_client_info": {
+          "package_name": "com.GreenTrace.carbon_footprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17088251352-2ekhbfhn74blq454fdjd4vdjhfvelr4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GreenTrace.carbon_footprint",
+            "certificate_hash": "340caacbe7466537f8726bc2e8dfb3797fa549e7"
+          }
+        },
+        {
+          "client_id": "17088251352-blp5q0b2fh9ae9mg0u0hupdj3c974lsm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCipIgTw7uJlBxltbwSvbLgG194DGmBVCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17088251352-blp5q0b2fh9ae9mg0u0hupdj3c974lsm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

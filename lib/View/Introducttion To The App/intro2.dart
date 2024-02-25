@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Navigations/routes_name.dart';
+import '../../Navigations/routes_name.dart';
+import 'dart:io';
 
 class Introducing2 extends StatefulWidget {
   const Introducing2({super.key});
@@ -18,18 +19,11 @@ class _Introducing2State extends State<Introducing2> {
         children: [
           Column(
             children: [
-              // ClipPath(
-              //   clipper: MyCustomClipper(),
-              //   child: Container(
-              //     color: Color(0xffC1FFC0),
-              //     height: 200,
-              //   ),
-              // ),
               Container(
                 height: 700,
                 width: 550,
 
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xffC1FFC0),
                   shape: BoxShape.circle,
                 ),
@@ -43,7 +37,7 @@ class _Introducing2State extends State<Introducing2> {
                 height: 350,
                 width: 550,
 
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xffC1FFC0),
                   shape: BoxShape.rectangle,
                 ),
@@ -68,7 +62,6 @@ class _Introducing2State extends State<Introducing2> {
                       children: [
                         TextSpan(
                           text:'Trace',style: GoogleFonts.pottaOne(color:Colors.black87,fontSize: 24,fontWeight: FontWeight.w400),
-
                         )
                       ]
                   ),
@@ -76,12 +69,12 @@ class _Introducing2State extends State<Introducing2> {
                 ),
               ],
             ),
-            Image(
+            const Image(
               height: 337,
               width: 345,
               image: AssetImage('images/save-earth.png'),
             ),
-            SizedBox(height: 80,),
+            const SizedBox(height: 80,),
             Center(
               child: Text(' View Carbon footprints',style: GoogleFonts.poppins(color:Colors.black
                   ,fontSize: 18,fontWeight: FontWeight.w600) ,),
@@ -91,12 +84,12 @@ class _Introducing2State extends State<Introducing2> {
                   ,fontSize: 18,fontWeight: FontWeight.w600) ,),
             ),
 
-    SizedBox(height: 100),
-    Image(
-    width: 245,
-    image: AssetImage('images/Slider2.png'),
-    ),
-    SizedBox(height: 20),
+    const SizedBox(height: 100),
+            // Image(
+            //   width: 245,
+            //   image: AssetImage('images/Slider2.png'),
+            // ),
+    const SizedBox(height: 20),
             Row(
               children: [
                 SizedBox(width: 74,),
@@ -117,14 +110,7 @@ class _Introducing2State extends State<Introducing2> {
                       decoration: BoxDecoration(
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.green.shade300,
-                            offset: Offset(0,2),
-                            blurRadius: 1,
 
-                          )
-                        ],
                         border:Border.all(
                           color :Colors.green,
                           // width: 10,

@@ -17,9 +17,12 @@ class RoutesName{
   static const String waterfootPrint='waterFootprint';
   static const String scanner='scanner';
   static const String searchresult='searchResult';
-  static const String productpage='ProductPage';
+
   static const String tracker='record_tracker';
   static const String readmore='read_more';
   static const String waterReadmore='readmoreWater';
   static const String share='Share';
+  static const String galeryImage ='Image_picker';
+  static const String education ='Educational Resources';
+  static const String countribution ='Countribution Page';
 }

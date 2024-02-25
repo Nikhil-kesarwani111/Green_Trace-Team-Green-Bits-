@@ -18,10 +18,11 @@ class _ReadMoreState extends State<ReadMore> {
                 itemCount:1,
                 itemBuilder: (context,index){
                   return Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-
                       Container(
-                        height: 500,
+                        height: 600,
                         width: 450,
                         child: Stack(
                           children: [
@@ -40,7 +41,7 @@ class _ReadMoreState extends State<ReadMore> {
 
 
                                 image: DecorationImage(
-                                  image: AssetImage('images/1.jpg'),
+                                  image: AssetImage('images/Screenshot_20240222-003810.png'),
                                   fit: BoxFit.cover,
                                 ),
                               ),

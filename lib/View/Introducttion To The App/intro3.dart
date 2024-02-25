@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Navigations/routes_name.dart';
+import '../../Navigations/routes_name.dart';
 
 class Introducing3 extends StatefulWidget {
   const Introducing3({super.key});
@@ -92,10 +92,10 @@ class _Introducing3State extends State<Introducing3> {
                 ),
 
                 SizedBox(height: 100),
-                Image(
-                  width: 245,
-                  image: AssetImage('images/Slider (3).png'),
-                ),
+                // Image(
+                //   width: 245,
+                //   image: AssetImage('images/Slider (3).png'),
+                // ),
                 SizedBox(height: 20),
                 InkWell(
                   onTap: (){
@@ -111,14 +111,7 @@ class _Introducing3State extends State<Introducing3> {
                     decoration: BoxDecoration(
                       color: Colors.green,
                       borderRadius: BorderRadius.circular(12),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.green.shade300,
-                          offset: Offset(0,2),
-                          blurRadius: 1,
 
-                        )
-                      ],
                       border:Border.all(
                         color :Colors.green,
                         // width: 10,

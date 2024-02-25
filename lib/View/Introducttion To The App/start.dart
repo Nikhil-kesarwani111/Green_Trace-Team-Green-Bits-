@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Navigations/routes_name.dart';
+import '../../Navigations/routes_name.dart';
 
 class IntroductionToApp extends StatefulWidget {
   const IntroductionToApp({super.key});

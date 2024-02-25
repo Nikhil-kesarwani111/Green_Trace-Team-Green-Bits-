@@ -1,26 +1,25 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:otp_text_field/otp_field.dart';
-import 'package:otp_text_field/style.dart';
-
-import '../Navigations/routes_name.dart';
 
 
+import '../../Navigations/routes_name.dart';
 
-class EnterOTP extends StatefulWidget {
-  const EnterOTP({super.key});
+class VerificationCode extends StatelessWidget {
+  final VerificationId;
+   VerificationCode({super.key,
+   required this.VerificationId,
+   });
 
-  @override
-  State<EnterOTP> createState() => _EnterOTPState();
-}
+  final FirebaseAuth auth=FirebaseAuth.instance;
+  final _formKey = GlobalKey<FormState>();//for checking email is empty or not
+  final verifycodeController=TextEditingController();
 
-class _EnterOTPState extends State<EnterOTP> {
-  get otpbox => null;
 
   @override
   Widget build(BuildContext context) {
-    var errorController;
-    var textEditingController;
+    // var errorController;
+    //var textEditingController;
     return Scaffold(
       body:SafeArea(
         child: Column(
@@ -64,17 +63,25 @@ class _EnterOTPState extends State<EnterOTP> {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: OTPTextField(
-                outlineBorderRadius: 10,
-                controller: otpbox,
-                length: 4,
-                width: MediaQuery.of(context).size.width,
-                fieldWidth: 50,
-                style: TextStyle(fontSize: 17),
-                textFieldAlignment: MainAxisAlignment.spaceEvenly,
-                fieldStyle: FieldStyle.box,
-                onCompleted: (pin) {
-                },
+              child:  Form(
+                key: _formKey,
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: TextFormField(
+                    controller: verifycodeController ,
+                    // obscureText: true,
+                    decoration: InputDecoration(
+                        hintText: '6 digit code'
+                    ),
+                    validator: (value){
+                      if(value!.isEmpty){
+                        return 'Enter phone number';
+                      }
+                      else
+                        return null  ;
+                    },
+                  ),
+                ),
               ),
             ),
             Center(
@@ -94,9 +101,25 @@ class _EnterOTPState extends State<EnterOTP> {
                 child: Container(
                   width: 160,
                   height: 45,
-                  child: Center(
-                    child: Text('Verify',style: GoogleFonts.poppins(color:Colors.white
-                        ,fontSize: 16,fontWeight: FontWeight.w700) ,),
+                  child: InkWell(
+                    onTap: ()async{
+                      if(_formKey.currentState!.validate()){
+                        final crenditial=PhoneAuthProvider.credential(
+                          verificationId:VerificationId,
+                          smsCode: verifycodeController.text,
+                        );
+                        try{
+                          await auth.signInWithCredential(crenditial);
+                          Navigator.pushReplacementNamed(context,RoutesName.homepage);
+                        }catch(e){
+
+                        }
+                      };
+                    },
+                    child: Center(
+                      child: Text('Verify',style: GoogleFonts.poppins(color:Colors.white
+                          ,fontSize: 16,fontWeight: FontWeight.w700) ,),
+                    ),
                   ),
                   decoration: ShapeDecoration(
                     color: Colors.green,
@@ -113,3 +136,4 @@ class _EnterOTPState extends State<EnterOTP> {
     );
   }
 }
+

@@ -19,7 +19,6 @@ class _ReadmoreWaterState extends State<ReadmoreWater> {
                 itemBuilder: (context,index){
                   return Column(
                     children: [
-
                       Container(
                         height: 700,
                         width: 600,
@@ -28,15 +27,6 @@ class _ReadmoreWaterState extends State<ReadmoreWater> {
                             Expanded(flex:4,child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-
-                                boxShadow: [
-                                  // BoxShadow(
-                                  //   color: Colors.green,
-                                  //   blurRadius: 500,
-                                  //   blurStyle: BlurStyle.outer,
-                                  //
-                                  // )
-                                ],
 
 
                                 image: DecorationImage(
@@ -50,65 +40,26 @@ class _ReadmoreWaterState extends State<ReadmoreWater> {
                               padding: const EdgeInsets.only(top:100.0),
                               child: Expanded(flex:1,child: Container(
                                 decoration: BoxDecoration(
-                                  // gradient: LinearGradient(
-                                  //   colors: [Colors.black, Colors.transparent],
-                                  //   begin: Alignment.bottomCenter,
-                                  //   end: Alignment.topCenter,
-                                  // ),
+
                                   borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
-                                  boxShadow: [
-                                    // BoxShadow(
-                                    //   color: Colors.green,
-                                    //   blurRadius: 500,
-                                    //   blurStyle: BlurStyle.outer,
-                                    //
-                                    // )
-                                  ],
 
 
-                                  // image: DecorationImage(
-                                  //   image: AssetImage(e),
-                                  //   fit: BoxFit.cover,
-                                  // ),
+
                                 ),
                               )),
                             ),
-                            // Padding(
-                            //   padding: const EdgeInsets.only(top: 260.0,left: 10,right: 10),
-                            //   child: RichText(
-                            //     text: TextSpan(
-                            //         text:  'Climate change is getting worst day by day ',style: GoogleFonts.poppins(color:Colors.white,fontSize: 12,fontWeight: FontWeight.w400),
-                            //         children: [
-                            //           TextSpan(
-                            //             text:'Read More ...',style: GoogleFonts.poppins(color:Colors.lightBlue,fontSize: 12,fontWeight: FontWeight.w400),
-                            //
-                            //           )
-                            //         ]
-                            //     ),
-                            //     //
-                            //   ),
-                            // ),
+
                           ],
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
-                            // BoxShadow(
-                            //   color: Colors.green,
-                            //   blurRadius: 500,
-                            //   blurStyle: BlurStyle.outer,
-                            //
-                            // )
-                          ],
+
                           border:Border.all(
                             color :Colors.white,
                             width: 3,
                           ),
 
-                          // image: DecorationImage(
-                          //   image: AssetImage(e),
-                          //   fit: BoxFit.cover,
-                          // ),
+
                         ),
                       ),
                     //  SizedBox(height: 30,),

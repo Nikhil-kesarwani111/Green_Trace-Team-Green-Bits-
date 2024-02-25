@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ArticlePage extends StatefulWidget {
   const ArticlePage({super.key});
@@ -30,15 +29,6 @@ class _ArticlePageState extends State<ArticlePage> {
                                  decoration: BoxDecoration(
                                    borderRadius: BorderRadius.circular(20),
 
-                                   boxShadow: [
-                                     // BoxShadow(
-                                     //   color: Colors.green,
-                                     //   blurRadius: 500,
-                                     //   blurStyle: BlurStyle.outer,
-                                     //
-                                     // )
-                                   ],
-
 
                                    image: DecorationImage(
                                      image: AssetImage('images/WhatsApp Image 2024-01-17 at 15.42.45_20a5a251.jpg'),
@@ -51,65 +41,22 @@ class _ArticlePageState extends State<ArticlePage> {
                                  padding: const EdgeInsets.only(top:100.0),
                                  child: Expanded(flex:1,child: Container(
                                    decoration: BoxDecoration(
-                                     // gradient: LinearGradient(
-                                     //   colors: [Colors.black, Colors.transparent],
-                                     //   begin: Alignment.bottomCenter,
-                                     //   end: Alignment.topCenter,
-                                     // ),
                                      borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
-                                     boxShadow: [
-                                       // BoxShadow(
-                                       //   color: Colors.green,
-                                       //   blurRadius: 500,
-                                       //   blurStyle: BlurStyle.outer,
-                                       //
-                                       // )
-                                     ],
 
-
-                                     // image: DecorationImage(
-                                     //   image: AssetImage(e),
-                                     //   fit: BoxFit.cover,
-                                     // ),
                                    ),
                                  )),
                                ),
-                               // Padding(
-                               //   padding: const EdgeInsets.only(top: 260.0,left: 10,right: 10),
-                               //   child: RichText(
-                               //     text: TextSpan(
-                               //         text:  'Climate change is getting worst day by day ',style: GoogleFonts.poppins(color:Colors.white,fontSize: 12,fontWeight: FontWeight.w400),
-                               //         children: [
-                               //           TextSpan(
-                               //             text:'Read More ...',style: GoogleFonts.poppins(color:Colors.lightBlue,fontSize: 12,fontWeight: FontWeight.w400),
-                               //
-                               //           )
-                               //         ]
-                               //     ),
-                               //     //
-                               //   ),
-                               // ),
+
                              ],
                            ),
                            decoration: BoxDecoration(
                              borderRadius: BorderRadius.circular(20),
-                             boxShadow: [
-                               // BoxShadow(
-                               //   color: Colors.green,
-                               //   blurRadius: 500,
-                               //   blurStyle: BlurStyle.outer,
-                               //
-                               // )
-                             ],
+
                              border:Border.all(
                                color :Colors.white,
                                width: 3,
                              ),
 
-                             // image: DecorationImage(
-                             //   image: AssetImage(e),
-                             //   fit: BoxFit.cover,
-                             // ),
                            ),
                          ),
                          SizedBox(height: 30,),

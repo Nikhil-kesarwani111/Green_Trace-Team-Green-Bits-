@@ -1,8 +1,9 @@
-import 'dart:async';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:carbon_footprint/Navigations/routes_name.dart';
+import 'package:carbon_footprint/View/Splash%20Screen%20Related/Login_splashScreen.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,16 +15,19 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
+
+  SplashServices splashScreen=SplashServices();
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
 
+splashScreen.isLogin(context);
+    // Timer(Duration(seconds: 3), () {
+    //   Navigator.pushReplacementNamed(context,RoutesName.IntroductionToapp);
+    // })
 
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context,RoutesName.IntroductionToapp);
-    })
-    ;
     // void dispose () {
     //   // TODO: implement dispose
     //   _controller;

@@ -1,6 +1,6 @@
 # Green Trace App: Climate Change Solution 
 
-A new Flutter project.
+<p>A new Flutter project.</p>
 <img src="https://github.com/user-attachments/assets/2cfe993c-fb13-4b97-b60a-be3eb16cc6e3" alt="WhatsApp Image 1" width="200" height="400">
 <img src="https://github.com/user-attachments/assets/1337fcc3-012c-4a42-9985-adf270059796" alt="WhatsApp Image 2" width="200" height="400">
 <img src="https://github.com/user-attachments/assets/6c1270f3-317b-4ccd-b13c-daeaf621f4fc" alt="WhatsApp Image 3" width="200" height="400">

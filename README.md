@@ -16,6 +16,10 @@
   <li>Enabled over 1,000 users to access actionable environmental data, resulting in a 25% improvement in data retrieval efficiency and contributing to a 20% increase in user awareness and engagement regarding climate change.</li>
 </ul>
 
+### Check out the demo video:
+
+[![Watch the video](https://img.youtube.com/vi/xLnSqqFYE3c/0.jpg)](https://www.youtube.com/watch?v=xLnSqqFYE3c)
+
 
 A few resources to get you started if this is your first Flutter project:
 
